@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/CS_185_React/static/css/main.21d09ebf.chunk.css",
+    "main.js": "/CS_185_React/static/js/main.b2e728c4.chunk.js",
+    "main.js.map": "/CS_185_React/static/js/main.b2e728c4.chunk.js.map",
+    "runtime-main.js": "/CS_185_React/static/js/runtime-main.8f8664c3.js",
+    "runtime-main.js.map": "/CS_185_React/static/js/runtime-main.8f8664c3.js.map",
+    "static/js/2.c3ffb78c.chunk.js": "/CS_185_React/static/js/2.c3ffb78c.chunk.js",
+    "static/js/2.c3ffb78c.chunk.js.map": "/CS_185_React/static/js/2.c3ffb78c.chunk.js.map",
+    "index.html": "/CS_185_React/index.html",
+    "precache-manifest.81fd406590dfd21bba9e9cd718f173fc.js": "/CS_185_React/precache-manifest.81fd406590dfd21bba9e9cd718f173fc.js",
+    "service-worker.js": "/CS_185_React/service-worker.js",
+    "static/css/main.21d09ebf.chunk.css.map": "/CS_185_React/static/css/main.21d09ebf.chunk.css.map",
+    "static/js/2.c3ffb78c.chunk.js.LICENSE.txt": "/CS_185_React/static/js/2.c3ffb78c.chunk.js.LICENSE.txt",
+    "static/media/dog5.jpeg": "/CS_185_React/static/media/dog5.7168856b.jpeg",
+    "static/media/dog6.jpeg": "/CS_185_React/static/media/dog6.ef05f033.jpeg",
+    "static/media/ucd.jpeg": "/CS_185_React/static/media/ucd.8e44e4c7.jpeg",
+    "static/media/ucsb.jpeg": "/CS_185_React/static/media/ucsb.ad9042a1.jpeg",
+    "static/media/ucsc.jpeg": "/CS_185_React/static/media/ucsc.7bf3f607.jpeg",
+    "static/media/ucsd.jpeg": "/CS_185_React/static/media/ucsd.0d8a55aa.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f8664c3.js",
+    "static/js/2.c3ffb78c.chunk.js",
+    "static/css/main.21d09ebf.chunk.css",
+    "static/js/main.b2e728c4.chunk.js"
+  ]
+}
