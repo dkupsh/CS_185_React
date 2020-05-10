@@ -5,6 +5,11 @@ import Body from './Components/Body';
 import Title from './Components/Title';
 import ScrollUpButton from 'react-scroll-up-button'
 
+
+import config from './config'
+
+const firebase = require('firebase')
+
 export class App extends Component {
     constructor() {
         super();
@@ -17,6 +22,14 @@ export class App extends Component {
             })
         }
     }
+
+    componentDidMount() {
+        if (!firebase.apps.length) {
+            firebase.initializeApp(config)
+        }
+
+    }
+
     render() {
         const tabs = [
             {
@@ -35,7 +48,12 @@ export class App extends Component {
                 id: 4,
                 title: 'Links'
             },
+            {
+                id: 5,
+                title: 'Database'
+            }
         ]
+
         return (
             <div className="body">
                 <div className="nav-bar">
@@ -46,7 +64,7 @@ export class App extends Component {
                 </div>
                 <div className="main-body">
                     <Title activeTab={this.state.activeTab} />
-                    <Body activeTab={this.state.activeTab} />
+                    <Body activeTab={this.state.activeTab} firebase={this.firebase} />
                 </div>
                 <div>
                     <ScrollUpButton

@@ -9,8 +9,10 @@ export class Title extends Component {
             return "Image Page"
         else if (activeTab == 3)
             return "Videos Page"
-        else
+        else if (activeTab == 4)
             return "Links Page"
+        else
+            return "Database Page"
     }
     render() {
         return (
