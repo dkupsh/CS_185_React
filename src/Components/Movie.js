@@ -20,7 +20,7 @@ export class Movie extends Component {
         let promises = []
 
         movies.forEach(function (item, index) {
-            promises.push(axios.get("http://www.omdbapi.com/?apikey=4131ae30&i=" + item))
+            promises.push(axios.get("https://www.omdbapi.com/?apikey=4131ae30&i=" + item))
         });
 
         axios.all(promises).then(function (results) {
