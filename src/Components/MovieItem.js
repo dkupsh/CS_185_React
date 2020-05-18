@@ -18,19 +18,22 @@ class Image extends Component {
 
         return (
             <div>
-                <img className='image'
+                <img className='movie'
                     src={this.props.imageSRC}
                     onClick={() => this.handleToggleModal()}
-                    onMouseOver="this.style.opacity=.7"
-                    onMouseOut="this.style.opacity=0.6"
-                    alt="Doggy" />
+                    alt="Movie" />
 
                 {showModal && (
                     <Modal onCloseRequest={() => this.handleToggleModal()}>
                         <img className='modal'
                             src={this.props.imageSRC}
                             onClick={() => this.handleToggleModal()}
-                            alt="Doggy" />
+                            alt="Movie" />
+                        <div className="ModalMovie">
+                            <h1>{this.props.Title}</h1>
+                            <h1>{this.props.Director}</h1>
+                            <h1>{this.props.Rating}</h1>
+                        </div>
                     </Modal>
                 )}
             </div>

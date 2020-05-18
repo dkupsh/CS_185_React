@@ -11,8 +11,10 @@ export class Title extends Component {
             return "Videos Page"
         else if (activeTab == 4)
             return "Links Page"
-        else
+        else if (activeTab == 5)
             return "Database Page"
+        else
+            return "Movies Page"
     }
     render() {
         return (

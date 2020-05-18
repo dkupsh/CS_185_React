@@ -4,6 +4,7 @@ import Images from './Images'
 import Videos from './Videos'
 import Links from './Links'
 import Database from './Database'
+import Movie from './Movie';
 
 export class Body extends Component {
     displayContent = () => {
@@ -16,8 +17,10 @@ export class Body extends Component {
             return <Videos />
         else if (activeTab == 4)
             return <Links />
-        else
+        else if (activeTab == 5)
             return <Database firebase={this.props.firebase} />
+        else
+            return <Movie />
     }
     render() {
         return (this.displayContent());

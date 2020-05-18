@@ -51,6 +51,10 @@ export class App extends Component {
             {
                 id: 5,
                 title: 'Database'
+            },
+            {
+                id: 6,
+                title: 'Movies'
             }
         ]
 

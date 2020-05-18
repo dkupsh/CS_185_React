@@ -40,9 +40,27 @@
     display: block;
     padding: 10px;
     border-radius: 8px;
-    width: 60vw;
-    height: auto;
+    height: 70%;
+    width: auto;
     object-fit: contain;
+}
+
+.ModalMovie {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.movie {
+    border-radius: 8px;
+    vertical-align: middle;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 16px;
+    transition: 0.3s;
+}
+
+.movie:hover {
+    opacity: .7;
 }
 
 .image {
