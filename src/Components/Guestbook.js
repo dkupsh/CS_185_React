@@ -33,10 +33,6 @@ export class GuestBook extends Component {
         })
     }
 
-    componentDidUpdate(prevProps, prevState, snapshoyt) {
-
-    }
-
     render() {
         const data = this.state.data;
 
