@@ -5,6 +5,8 @@ import Videos from './Videos'
 import Links from './Links'
 import Database from './Database'
 import Movie from './Movie';
+import AddMovie from './AddMovie';
+import AddList from './AddList'
 
 export class Body extends Component {
     displayContent = () => {
@@ -19,8 +21,12 @@ export class Body extends Component {
             return <Links />
         else if (activeTab == 5)
             return <Database firebase={this.props.firebase} />
-        else
+        else if (activeTab == 6)
             return <Movie />
+        else if (activeTab == 7)
+            return <AddMovie />
+        else if (activeTab == 8)
+            return <AddList />
     }
     render() {
         return (this.displayContent());
