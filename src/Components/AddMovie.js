@@ -42,9 +42,12 @@ export class AddMovie extends Component {
                 const director = response.data.Director;
                 const rating = response.data.imdbRating;
                 const poster = response.data.Poster;
+                const actors = response.data.Actors;
 
-                ref.set({ id, title, director, rating, poster });
-                alert("Added Movie " + title + " to database");
+                ref.set({ id, title, director, rating, poster, actors });
+                console.log(response.data);
+                console.log("hello");
+                alert("Added Movie " + title + " to database!");
             }.bind(this))
             .catch(function (error) {
                 alert("Invalid Movie Id: " + id);
