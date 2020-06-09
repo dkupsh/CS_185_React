@@ -7,6 +7,7 @@ import Database from './Database'
 import Movie from './Movie';
 import AddMovie from './AddMovie';
 import AddList from './AddList'
+import MovieGraph from './MovieGraph';
 
 export class Body extends Component {
     displayContent = () => {
@@ -27,6 +28,8 @@ export class Body extends Component {
             return <AddMovie />
         else if (activeTab == 8)
             return <AddList />
+        else if (activeTab == 9)
+            return <MovieGraph />
     }
     render() {
         return (this.displayContent());
